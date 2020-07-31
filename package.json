@@ -1,0 +1,86 @@
+{
+  "name": "egg-antd-admin",
+  "version": "1.0.0",
+  "description": "egg + umi + antd + ts 中后台脚手架",
+  "private": true,
+  "egg": {
+    "typescript": true,
+    "declarations": true
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=egg-server-egg-antd-admin",
+    "stop": "egg-scripts stop --title=egg-server-egg-antd-admin",
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "test-local": "egg-bin test",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "cov": "egg-bin cov",
+    "tsc": "mv app/web app/web_ignore && ets && tsc -p tsconfig.json --allowJs false && mv app/web_ignore app/web",
+    "ci": "npm run lint && npm run cov && npm run tsc",
+    "autod": "autod",
+    "lint": "eslint . --ext .ts",
+    "clean": "ets clean"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.0.6",
+    "@ant-design/pro-layout": "5.0.9",
+    "antd": "^4.4.3",
+    "classnames": "^2.2.6",
+    "dva": "^2.4.1",
+    "egg": "^2.6.1",
+    "egg-scripts": "^2.6.0",
+    "egg-view-assets": "^1.6.1",
+    "egg-view-nunjucks": "^2.2.0",
+    "lodash": "^4.17.11",
+    "moment-timezone": "^0.5.31",
+    "path-to-regexp": "2.4.0",
+    "prism-react-renderer": "^1.0.2",
+    "qs": "^6.9.0",
+    "react": "^16.8.6",
+    "react-copy-to-clipboard": "^5.0.2",
+    "react-dom": "^16.8.6",
+    "redux": "^4.0.1",
+    "typescript": "^3.7.4",
+    "umi": "^2.12.5",
+    "umi-plugin-react": "^1.8.0",
+    "umi-request": "^1.2.14"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@types/lodash": "^4.14.144",
+    "@types/qs": "^6.5.3",
+    "@types/react": "^16.8.19",
+    "@types/react-dom": "^16.8.4",
+    "@types/mocha": "^2.2.40",
+    "@types/node": "^7.0.12",
+    "@types/supertest": "^2.0.0",
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "egg-ci": "^1.8.0",
+    "egg-bin": "^4.11.0",
+    "egg-mock": "^3.16.0",
+    "egg-ts-helper": "^1.25.8",
+    "tslib": "^1.9.0",
+    "eslint": "^6.7.2",
+    "eslint-config-egg": "^8.0.0",
+    "eslint-config-react-app": "^5.2.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "typescript": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "ci": {
+    "version": "8"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "eslintIgnore": [
+    "coverage"
+  ],
+  "author": "suinia",
+  "license": "MIT"
+}

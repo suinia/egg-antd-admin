@@ -1,0 +1,21 @@
+{
+  "extends": "./config/tsconfig.base",
+  "compileOnSave": true,
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./app/web/*"]
+    }
+  },
+  "exclude": [
+    "bin/*",
+    "app/public",
+    "app/view",
+    "app/web_ignore"
+  ]
+}

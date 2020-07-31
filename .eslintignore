@@ -1,0 +1,14 @@
+typings/
+logs/
+run/
+*.d.ts
+
+# !.eslintrc.js
+# !.autod.config.js
+# !.umirc.ts
+# !.huskyrc.js
+# !.lintstagedrc.js
+# !.commitlintrc.js
+# !.stylelintrc.js
+# 项目根路径下的配置文件
+!/.*.js
