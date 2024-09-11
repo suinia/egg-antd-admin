@@ -33,7 +33,7 @@
     "egg-view-nunjucks": "^2.2.0",
     "lodash": "^4.17.11",
     "moment-timezone": "^0.5.31",
-    "path-to-regexp": "2.4.0",
+    "path-to-regexp": "3.3.0",
     "prism-react-renderer": "^1.0.2",
     "qs": "^6.9.0",
     "react": "^16.8.6",
